@@ -1,14 +1,42 @@
 body {
-    background-color: rgb(141, 236, 240);
-    
+    background-image: linear-gradient(to right, rgb(169, 252, 252), rgb(83, 177, 177), rgb(15, 146, 146));
+
 }
-div {
+.icon {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+.hi {
+    position: relative;
+    display: inline-block;
+}
+.two {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+}
+.hi:hover .two {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.one {
    padding: 2%;
    size: 100px;
    border-radius: 10px;
    background-color: rgb(255, 255, 255);
    box-shadow: 10px 10px 5px 5px rgb(42, 151, 151);
-   margin: auto;
+   margin-left: 25%;
+   margin-right: 25%;
    width: 50%;
     height: 25%;
     max-width: fit-content;
@@ -16,21 +44,31 @@ div {
    size: 10%;
 
 }
+ul {
+    list-style-type: none;
+    margin: 10%;
+}
+a {
+    color: rgb(40, 205, 211);
+}
+a:hover {
+    color: rgb(255, 0, 64);
+}
 
 section {
     display: flex;
     justify-content: center
 }
-img {
+.icon2 {
     width: 30%;
     clip-path: circle()
 }
 
-img {
+.icon2 {
     transition: transform 0.4s ease;
 }
 
-img:hover {
+.icon2:hover {
     transform: rotate(360deg);
 }
 
